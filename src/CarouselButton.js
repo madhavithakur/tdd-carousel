@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const CarouselButton = props => <button {...props} />;
 
 CarouselButton.propTypes = {
-    children: PropTypes.node.isRequired,
+    props: PropTypes.node.isRequired,
 }
 
 export default CarouselButton;
