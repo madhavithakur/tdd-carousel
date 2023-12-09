@@ -1,16 +1,17 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { configure, shallow } from 'enzyme';
+import Adapter from '@cfaester/enzyme-adapter-react-18';
 import  CarouselButton from '../src/CarouselButton';
+
+configure({adapter: new Adapter() });
 
 describe('Carousel Button', () => {
 
     const text = 'Button Text';
     let wrapper;
-
     beforeEach(()=>{
         wrapper = shallow(<CarouselButton>{text}</CarouselButton>);
     });
-
     it('renders a <button>', () => {
         expect(wrapper.type()).toBe('button');
     });
