@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watchAll",
     "lint": "eslint . && prettier-eslint --list-different **/*.js",
     "format": "prettier-eslint --write **/*.js"
   },
@@ -25,6 +25,7 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
+    "prop-types": "^15.8.1",
     "react": "^18.2.0"
   }
 }
