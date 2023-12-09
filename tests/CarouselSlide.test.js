@@ -1,9 +1,6 @@
 import React from 'react';
-import { configure, shallow } from 'enzyme';
-import Adapter from '@cfaester/enzyme-adapter-react-18';
+import { shallow } from 'enzyme';
 import CarouselSlide from '../src/CarouselSlide';
-
-configure({adapter: new Adapter() });
 
 describe('CarouselSlide', () => {
     let wrapper;
