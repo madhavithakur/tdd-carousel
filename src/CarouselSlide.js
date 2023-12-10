@@ -1,5 +1,12 @@
 import React from 'react';
-import PropType from 'prop-types'
+import PropType from 'prop-types';
+//import styled from 'styled-components';
+
+// const Img = styled.img`
+//     object-fit: cover;
+//     width: 100%;
+//     height: 500px;
+// `;
 
 const CarouselSlide = ({imgUrl, description, attribution, ...rest}) => (
     <figure {...rest}>
